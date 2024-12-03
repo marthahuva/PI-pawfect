@@ -1,0 +1,83 @@
+/* Container principal del filtro */
+#filtro-container {
+	margin: 10px auto; /* Centrado horizontal */
+	margin-top: 30px;
+	border-radius: 8px; /* Borde más suave */
+	display: flex;
+	flex-direction: row;
+	width: 60%; /* Espaciado horizontal interno */
+	height: 60px; /* Altura más cómoda */
+	background-color: #fffcaf; /* Fondo claro para contraste */
+	box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Sombra para mayor profundidad */
+}
+
+/* Dropdown container */
+#dropdown-container {
+	display: flex;
+	justify-content: space-around; /* Espaciado uniforme entre elementos */
+	align-items: center; /* Centrado vertical */
+	width: 100%; /* Adaptable al tamaño del contenedor */
+	gap: 15px; /* Espaciado entre elementos */
+}
+
+#myinput {
+	background-color: #7888c6;
+	width: 40%;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+#myinput::placeholder {
+	color: white; /* Cambia el color del placeholder */
+}
+
+/* Botones dentro del filtro */
+.btn {
+	padding: 8px 20px; /* Espaciado interno */
+	gap: 20px;
+	font-size: 18px; /* Tamaño de fuente legible */
+	color: #fff; /* Texto blanco */
+	background-color: #7888c6; /* Color principal */
+	border: none; /* Sin bordes */
+	border-radius: 5px; /* Borde redondeado */
+	cursor: pointer; /* Cursor de mano */
+	transition: background-color 0.3s, transform 0.2s; /* Animación suave */
+}
+/* .dropdown-menu {
+	background-color: #7888c6;
+	font-size: 18px;
+	color: whitesmoke;
+} */
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1024px) {
+	#filtro-container {
+		flex-direction: column; /* Cambiar a columna */
+		height: auto;
+		width: 50%;
+	}
+
+	#myinput {
+		width: 90%;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	#dropdown-container {
+		flex-direction: column; /* Elementos en columna */
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	#agregar_producto {
+		width: 30%;
+		margin-bottom: 30px;
+	}
+
+	button {
+		width: 100%; /* Botones ocupan todo el ancho */
+		font-size: 16px;
+		margin-bottom: 10px; /* Fuente más grande en dispositivos pequeños */
+	}
+}

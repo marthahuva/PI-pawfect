@@ -1,0 +1,114 @@
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	gap: 15px;
+	background: rgb(253, 242, 112);
+	background: linear-gradient(
+		77deg,
+		rgba(253, 242, 112, 1) 25%,
+		rgba(120, 136, 198, 1) 69%,
+		rgba(39, 48, 84, 1) 100%
+	);
+}
+
+#container-home {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.text-home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: rgb(39, 48, 84) 0px 5px 15px;
+	box-shadow: #273054;
+	background-color: #7888c6;
+	padding: 50px;
+	border-radius: 20px;
+	gap: 5em;
+	position: relative;
+	left: 5%;
+}
+
+.carousel {
+	width: 600px; /* Tamaño fijo del carrusel */
+	height: 350px;
+	overflow: hidden; /* Evita desbordamientos */
+	margin: 0 auto;
+}
+
+.carousel-inner img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	transition: none !important; /* Sin animaciones */
+}
+
+.carousel-item {
+	transition: none !important; /* Sin transiciones de Bootstrap */
+}
+
+.img-home {
+	width: 90%;
+	height: ; /* Ajusta el ancho según sea necesario */
+	text-align: right; /* Opcional, alinea la imagen al lado derecho */
+}
+.img-home img {
+	width: 500px; /* Asegura que la imagen no se salga del contenedor */
+	height: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10%;
+	box-shadow: rgb(39, 48, 84) 0px 5px 10px;
+	box-shadow: #273054;
+}
+
+@media (max-width: 1200px) {
+	#container-home {
+		flex-direction: column-reverse; /* Cambia la disposición a columna */
+		justify-content: center;
+		align-items: center;
+		padding: 10%;
+		max-width: 100%; /* Evita desbordes */
+	}
+
+	.text-home {
+		width: 90%; /* Adapta el ancho al tamaño de pantalla */
+		height: auto; /* Permite que ajuste su altura automáticamente */
+		margin: 0 auto; /* Centra el contenedor */
+		text-align: center; /* Asegura que el texto esté centrado */
+	}
+
+	.carousel {
+		width: 100%; /* El carrusel ocupa todo el ancho disponible */
+		height: auto; /* Se adapta al contenido */
+		max-width: 100%; /* Evita desbordar del contenedor */
+	}
+
+	.carousel-inner img {
+		width: 100%; /* Escala las imágenes al ancho del carrusel */
+		height: auto; /* Mantiene las proporciones */
+		object-fit: contain; /* Evita recortes en la imagen */
+		display: block; /* Evita espacios extra alrededor */
+	}
+
+	.img-home {
+		width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+		text-align: center; /* Centra el contenido */
+		margin: 0 auto; /* Centra el contenedor */
+		margin-left: 10px;
+	}
+
+	.img-home img {
+		width: 100%; /* Ajusta la imagen al contenedor */
+		height: auto; /* Mantiene la proporción */
+		max-width: 100%; /* Evita desbordar del contenedor */
+		border-radius: 10%; /* Mantiene el borde redondeado */
+		box-shadow: rgb(39, 48, 84) 0px 5px 10px;
+	}
+}
