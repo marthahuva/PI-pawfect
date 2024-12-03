@@ -14,7 +14,7 @@ singupForm.addEventListener("submit", (e) =>{
     }
 
 
-    const url = `http://3.145.36.187:8080/api`;
+    const url = `http://52.14.15.70:8080/api`;
 
     fetch(url, {
       method: 'POST',

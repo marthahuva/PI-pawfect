@@ -24,7 +24,7 @@
 
 const loginForm = document.querySelector("#loginForm");
 async function fetchUser(email) {
-	const url = `http://3.145.36.187:8080/api/users/email/${email}`;
+	const url = `http://52.14.15.70:8080/api/users/email/${email}`;
 	try {
 		console.log("COMIENZO DE EJECUCION");
 		let response = await fetch(url);
