@@ -21,6 +21,7 @@ import com.pawfect.userpaw.service.UserService;
 
 @RestController
 @RequestMapping("/api")
+//@CrossOrigin(origins = "http://127.0.0.1:5505")
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 public class UserController {
 	

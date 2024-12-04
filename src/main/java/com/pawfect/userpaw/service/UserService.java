@@ -4,10 +4,13 @@ import java.util.List;
 
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.pawfect.userpaw.exceptions.UserNotFoundException;
 import com.pawfect.userpaw.model.UserEntity;
 import com.pawfect.userpaw.repository.UserRepository;
+
 
 @Service
 public class UserService {
